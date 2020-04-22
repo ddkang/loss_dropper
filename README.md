@@ -8,6 +8,9 @@ We provide code for loss dropping.
 
 What is loss truncation?
 ========================
+Loss truncation is a technique for improving natural language generation. It works by using the standard log loss and dropping high loss examples.
+
+See our paper for full details.
 
 
 Installation
