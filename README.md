@@ -39,7 +39,7 @@ self.dropper = LossDropper(dropc=dropc)
 ```
 self.criterion = nn.NLLLoss(weight, reduction='none')
 ```
-*IMPORTANT*: loss truncation performs dropping at the _sequence_ level. The standard reduction in pytorch will aggregate over the wrong dimensions for truncation.
+*IMPORTANT*: loss truncation performs dropping at the _sequence_ level. The reductions other than `none` will aggregate over the wrong dimensions for truncation.
 
 4. Do loss dropping:
 ```
